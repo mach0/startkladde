@@ -379,7 +379,7 @@ void PlotWidget::wheelEvent (QWheelEvent *event)
 	else
 	{
 		// Store the previous position so we can zoom around the mouse position
-        QPointF position_w=QPointF (event->position ());
+        QPointF position_w=QPointF (event->pos ());
 		QPointF position_p=toPlot (position_w);
 
 		zoomInBy (pow (2, angle/_mouseWheelZoomDoubleAngle));
